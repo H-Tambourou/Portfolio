@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import { Link } from "react-scroll";
 
-
 function Nav(){
     
     const linkNav = {
@@ -23,7 +22,6 @@ function Nav(){
                 </div>
                 <ul className={`navLinks ${currentState ? "toggleActive": ""}`} >
                     <Link to="about" smooth={true} spy={true} style= {linkNav}>about</Link>
-                    <Link to="featured" smooth={true} spy={true} style= {linkNav}>featured</Link>
                     <Link to="projects" smooth={true} spy={true} style= {linkNav}>projects</Link>
                     <Link to="contact" smooth={true} spy={true} style= {linkNav} >contact</Link>
                 </ul>

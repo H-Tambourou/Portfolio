@@ -1,12 +1,37 @@
 import React from "react";
+import {projects} from "../data.js";
+
 
 function Projects(){
     return(
-        <div id="projects" style={{width:"100%",height:"100vh", position:"relative", padding:"100px 0"}}>
-            <h1> all projects</h1>
-            <h1>Project 1</h1>
-            <h2 style={{position:"absolute", bottom:"8px", left:"16px", color:"white"}}>03</h2>
-        </div>
+        <section id="projects" style={{width:"100%", height:"100%", position:"relative", paddingTop:"65px"}}>
+            <div className="projectWrapper" style={{minHeight:"100vh"}} >
+                <h1 style={{width:"100%", textAlign:"center", fontSize:"calc(2.5em + 1vh)"}}>Projects</h1>
+                <div className="cards">
+                    {projects.map((project, index) => {
+                        return(
+                            <div className="card" key={index}>
+                                <img src={project.image} alt=""/>
+                                <h1>{project.title}</h1>
+                                <hr style={{width:"50px", height:"3px", margin:"20px auto", border:"0", backgroundColor:"crimson"}}/>
+                                <div className="projectDesc">
+                                    <p>{project.description}</p>
+                                </div>
+                                <div className="features">
+                                    {project.tags.map((t, i) => {
+                                        return <p key={i}>{t}</p>
+                                    })} 
+                                </div>
+                                <div className="projectLinks" style={{listStyle:"none", padding:"0", display:"flex", justifyContent:"space-around", margin:"2.5rem 0"}}>
+                                    <a className="projectLink" href={project.source} style={{color:"white", textDecoration:"none", fontSize:"1.2rem", borderRadius:"15px", padding:".5rem 1.5rem", backgroundColor:"#3a383840", cursor:"pointer" }}>Code</a>
+                                </div>
+                            </div>
+                        )
+                    })}
+                </div>
+            </div>
+            <span className="leftBottom" style={{position:"absolute", bottom:"8px", left:"16px", color:"white"}}>02</span>
+        </section>
     )
 }
 export default Projects;
