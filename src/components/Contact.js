@@ -46,10 +46,10 @@ function Contact() {
     }
 
     return(
-        <section id ="contact" style={{width:"100%",height:"100vh", position:"relative", paddingTop:"65px"}}>
-            <div className="contactWrapper" >
+        <section id ="contact" style={{width:"100%", minHeight:"100vh", position:"relative", paddingTop:"65px"}}>
+            <div className="contactWrapper"  >
                 <div className="contactInfo">
-                    <h1 className="hStyle">Contact me</h1>
+                    <h1 className="hStyle" style={{margin:"auto"}}>Contact me</h1>
                     <li style={{listStyle:"none"}}><MailOutline/><span>h.tambourou@gmail.com</span></li>
                     <li style={{listStyle:"none"}}><PhoneAndroid/><span>(781) 354-9549</span></li>
                 </div>
@@ -57,10 +57,9 @@ function Contact() {
                         <input placeholder="Name" type="text" required ref={nameRef} style={formStyle}/>
                         <input placeholder="Email" type="email" required ref={emailRef} style={formStyle}/>
                         <textarea placeholder="Message" required ref={messageRef} style={formStyle}/>
-                        <button type="submit" style={{cursor:"pointer", padding:".3em", border:"none"}}>Send Message</button>
+                        <button type="submit" value="Submit" style={{cursor:"pointer", padding:".3em", border:"none", backgroundColor:"#e4e6e7", marginBottom:"8px"}}>Send Message</button>
                 </form>
                 <span className={`transmit ${sent? 'active': null}`}>Message sent!</span>
-                <span className="leftBottom" style={{position:"absolute", bottom:"8px", left:"16px"}}>03</span>
             </div>
         </section>
     )

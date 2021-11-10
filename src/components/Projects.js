@@ -30,7 +30,6 @@ function Projects(){
                     })}
                 </div>
             </div>
-            <span className="leftBottom" style={{position:"absolute", bottom:"8px", left:"16px", color:"white"}}>02</span>
         </section>
     )
 }

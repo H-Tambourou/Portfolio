@@ -5,8 +5,8 @@ import resume from "../assets/Resume.pdf";
 function About() {
    
     return(
-        <section id="about" style={{width:"100%", height:"100vh", position:"relative", paddingTop:"65px"}}>
-            <div className="aboutWrapper" style={{width:"100%", height:"100%"}}>
+        <section id="about" style={{width:"100%", position:"relative", paddingTop:"65px", minHeight:"100vh"}}>
+            <div className="aboutWrapper" style={{width:"100%", position:'relative', display:"flex"}}>
             <div className="aboutCol">
                 <h1 className="hStyle" >Hello,</h1>
                 <p className="pStyle"> my name is Henrick Tambourou.<br/>I am a front-end developper <br/>and philomath<br/>-based in houston. </p>
@@ -20,8 +20,7 @@ function About() {
             </div>
             <div className="aboutCol" >
                 <img className="homeImg" src={img1} alt="..." style={{width:"90%", height:"100%", objectFit:"contain"}}/>
-            </div> 
-            <span className="leftBottom" style={{position:"absolute", bottom:"8px", left:"16px"}}>01</span>
+            </div>
             </div>
         </section>
     )

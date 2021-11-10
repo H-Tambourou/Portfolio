@@ -103,5 +103,8 @@
       font-size:16px;
       height: auto;
     }
+    .contactForm{
+      padding: 0;
+    }
   }
  

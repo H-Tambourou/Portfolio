@@ -1,21 +1,15 @@
-import About from './components/About';
-import Contact from './components/Contact';
-import Nav from './components/Nav';
-import Projects from './components/Projects';
-import Welcome from './components/Welcome';
+import Welcome from './Views/Welcome';
+import Main from './Views/Main';
 
-import './App.css';
-import './responsive.css';
+import "./styles/style.css";
+import "./styles/responsive.css"
 
 
 function App() {
   return (
     <div className="App">
       <Welcome/>
-      <Nav/>
-      <About/>
-      <Projects/>
-      <Contact/>
+      <Main/>
     </div>
   );
 }
