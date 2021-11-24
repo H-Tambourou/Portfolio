@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "../assets/HT_B&W.png";
+import img1 from "../assets/HT.png";
 import resume from "../assets/Resume.pdf";
 
 function About() {
