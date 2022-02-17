@@ -21,9 +21,9 @@ function Nav(){
                     <li className="line"></li>
                 </div>
                 <ul className={`navLinks ${currentState ? "toggleActive": ""}`} >
-                    <Link to="about" smooth={true} spy={true} style= {linkNav}>about</Link>
-                    <Link to="projects" smooth={true} spy={true} style= {linkNav}>projects</Link>
-                    <Link to="contact" smooth={true} spy={true} style= {linkNav} >contact</Link>
+                    <Link to="about" smooth={true} spy={true} style= {linkNav} onClick={ () => {setMenuState(!currentState)}}>about</Link>
+                    <Link to="projects" smooth={true} spy={true} style= {linkNav} onClick={ () => {setMenuState(!currentState)}}>projects</Link>
+                    <Link to="contact" smooth={true} spy={true} style= {linkNav} onClick={ () => {setMenuState(!currentState)}}>contact</Link>
                 </ul>
             </div>
         </div>

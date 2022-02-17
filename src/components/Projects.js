@@ -24,6 +24,7 @@ function Projects(){
                                 </div>
                                 <div className="projectLinks" style={{listStyle:"none", padding:"0", display:"flex", justifyContent:"space-around", margin:"2.5rem 0"}}>
                                     <a className="projectLink" href={project.source} style={{color:"white", textDecoration:"none", fontSize:"1.2rem", borderRadius:"15px", padding:".5rem 1.5rem", backgroundColor:"#3a383840", cursor:"pointer" }}>Code</a>
+                                    {project.live ? <a className="projectLink" href={project.live} style={{color:"white", textDecoration:"none", fontSize:"1.2rem", borderRadius:"15px", padding:".5rem 1.5rem", backgroundColor:"#3a383840", cursor:"pointer" }}>Live</a> : '' }
                                 </div>
                             </div>
                         )

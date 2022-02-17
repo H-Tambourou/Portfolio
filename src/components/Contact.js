@@ -58,8 +58,9 @@ function Contact() {
                         <input placeholder="Email" type="email" required ref={emailRef} style={formStyle}/>
                         <textarea placeholder="Message" required ref={messageRef} style={formStyle}/>
                         <button type="submit" value="Submit" style={{cursor:"pointer", padding:".3em", border:"none", backgroundColor:"#e4e6e7", marginBottom:"8px"}}>Send Message</button>
+                        <span className={`transmit ${sent? 'active': null}`} >Message sent!</span>
                 </form>
-                <span className={`transmit ${sent? 'active': null}`}>Message sent!</span>
+                
             </div>
         </section>
     )
