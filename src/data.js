@@ -20,7 +20,7 @@ export const projects = [
         image: img2,
         tags: ['React', 'JavaScript'],
         source: 'https://github.com/H-Tambourou/Aid-Map',
-        id: 0,
+        id: 1,
       },
       {
         title: 'Social Media App',
@@ -28,7 +28,7 @@ export const projects = [
         image: img3,
         tags: ['MongoDB', 'Express', 'React', 'Node'],
         source: 'https://github.com/H-Tambourou/Social-Media-App',
-        id: 1,
+        id: 2,
       },
       {
         title: 'Visio',
@@ -36,7 +36,7 @@ export const projects = [
           image: img4,
           tags: ['React', 'Javascript'],
         source: 'https://github.com/H-Tambourou/Visio',
-        id: 2,
+        id: 3,
       },
       {
         title: 'Weather App',
@@ -44,6 +44,6 @@ export const projects = [
         image: img5,
         tags: ['Javascript'],
         source: 'https://github.com/H-Tambourou/Weather',
-        id: 3,
+        id: 4,
       }, 
 ];

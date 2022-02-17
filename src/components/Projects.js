@@ -8,9 +8,9 @@ function Projects(){
             <div className="projectWrapper" style={{minHeight:"100vh"}} >
                 <h1 style={{width:"100%", textAlign:"center", fontSize:"calc(2.5em + 1vh)"}}>Projects</h1>
                 <div className="cards">
-                    {projects.map((project, index) => {
+                    {projects.map((project) => {
                         return(
-                            <div className="card" key={index}>
+                            <div className="card" key={project.id}>
                                 <img src={project.image} alt=""/>
                                 <h1>{project.title}</h1>
                                 <hr style={{width:"50px", height:"3px", margin:"20px auto", border:"0", backgroundColor:"crimson"}}/>
