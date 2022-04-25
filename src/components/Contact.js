@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import {PhoneAndroid, MailOutline} from "@material-ui/icons";
+import { MailOutline } from "@material-ui/icons";
 import emailjs from 'emailjs-com';
 
 function Contact() {
@@ -51,7 +51,6 @@ function Contact() {
                 <div className="contactInfo">
                     <h1 className="hStyle" style={{margin:"auto"}}>Contact me</h1>
                     <li style={{listStyle:"none"}}><MailOutline/><span>h.tambourou@gmail.com</span></li>
-                    <li style={{listStyle:"none"}}><PhoneAndroid/><span>(781) 354-9549</span></li>
                 </div>
                 <form className="contactForm" onSubmit={handleSubmit}>
                         <input placeholder="Name" type="text" required ref={nameRef} style={formStyle}/>

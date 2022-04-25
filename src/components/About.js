@@ -1,6 +1,5 @@
 import React from "react";
 import img1 from "../assets/HT.png";
-import resume from "../assets/Resume.pdf";
 
 function About() {
    
@@ -11,11 +10,9 @@ function About() {
                 <h1 className="hStyle" >Hello,</h1>
                 <p className="pStyle"> my name is Henrick Tambourou.<br/>I am a software engineer <br/>and philomath<br/>-based in houston. </p>
                 <ul className="quickLinks" style={{listStyle:"none", display:"flex", flexFlow:"row", padding:"5px", flexWrap:"wrap"}}>
-                    <li style={{border:"2px solid #d7d7d7", padding:"5px", margin:"5px"}}><a target="blank" style={{textDecoration:"none", color:"inherit"}} href="https://www.linkedin.com/in/henrick-t-429a1b223/">LinkedIn</a></li>
+                    <li style={{border:"2px solid #d7d7d7", padding:"5px", margin:"5px"}}><a target="blank" style={{textDecoration:"none", color:"inherit"}} href="https://www.linkedin.com/in/henricktambourou/">LinkedIn</a></li>
                     <li style={{border:"2px solid #d7d7d7", padding:"5px", margin:"5px"}}><a target="blank" style={{textDecoration:"none", color:"inherit"}} href="https://github.com/H-Tambourou">GitHub</a></li>
                     <li style={{border:"2px solid #d7d7d7", padding:"5px", margin:"5px"}}><a target="blank" style={{textDecoration:"none", color:"inherit"}} href="https://mobile.twitter.com/future_x_robert/">Twitter</a></li>
-                    <li style={{border:"2px solid #d7d7d7", padding:"5px", margin:"5px"}}><a style={{textDecoration:"none", color:"inherit"}} href={resume} download="HT_Resume">Resume</a></li>
- 
                  </ul>
             </div>
             <div className="aboutCol" >

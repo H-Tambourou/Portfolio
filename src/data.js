@@ -11,7 +11,6 @@ export const projects = [
       image: img1,
       tags: ['MongoDB', 'Redux', 'React', 'Node'],
       source: 'https://github.com/H-Tambourou/Hospital-Management',
-      live: 'https://htopus.dev/',
       id: 0,
     },
     {
